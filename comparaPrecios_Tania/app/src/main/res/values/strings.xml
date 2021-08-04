@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">comparaPrecios_Tania</string>
+    <string name="btn_login_name">Ingresar</string>
+    <string name="btn_signup">Registrar</string>
+</resources>

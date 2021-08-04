@@ -42,7 +42,7 @@ class MenuPrincipal : AppCompatActivity(){
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 //adapter.filter.filter(newText)
-
+                //revisar
                 return false
             }
 

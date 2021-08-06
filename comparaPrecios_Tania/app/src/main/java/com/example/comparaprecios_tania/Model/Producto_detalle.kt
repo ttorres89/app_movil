@@ -5,8 +5,9 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class ProductoModel(
-    val nombre: String,
-    val marca: String,
-    val image: Int
+data class  Producto_detalle(
+    val productoModel: ProductoModel,
+    val precio: Int,
+    val fuente: Fuente,
+    val url: String?
 ): Parcelable

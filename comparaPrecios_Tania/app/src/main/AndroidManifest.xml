@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.comparaprecios_Tania">
-        <activity android:name=".View.MenuPrincipal"></activity>
-        <activity android:name=".View.MainActivity"></activity>
+        <activity android:name=".View.Visor_producto_detalle"></activity>
+        <activity android:name=".View.MenuPrincipal" />
+        <activity android:name=".View.MainActivity" />
         <activity android:name=".View.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

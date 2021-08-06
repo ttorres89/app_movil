@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroud2">
 
     <ImageView
-        android:id="@+id/imageViewvisor"
-        android:layout_width="376dp"
-        android:layout_height="231dp"
+        android:id="@+id/imageViewdetalle"
+        android:layout_width="387dp"
+        android:layout_height="157dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,22 +21,22 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewdetalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/listadoPrecio"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewvisor"
-        app:layout_constraintVertical_bias="0.074" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewdetalle"
+        app:layout_constraintVertical_bias="0.047" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView_visor2"
-        android:layout_width="365dp"
-        android:layout_height="372dp"
+        android:id="@+id/recyclerView_visordetalle"
+        android:layout_width="364dp"
+        android:layout_height="449dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

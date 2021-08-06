@@ -2,4 +2,13 @@
     <string name="app_name">comparaPrecios_Tania</string>
     <string name="btn_login_name">Ingresar</string>
     <string name="btn_signup">Registrar</string>
+    <string name="pass">Contraseña</string>
+    <string name="email">Email</string>
+    <string name="nombre">Nombre</string>
+    <string name="listadoPrecio">Listado de Precios</string>
+    <string name="nombreProd">Nombre Producto</string>
+    <string name="prod">Producto</string>
+    <string name="detalleProd">Detalle</string>
+    <string name="buscar">Buscar</string>
+    <string name="benvenida">Bienvenido</string>
 </resources>

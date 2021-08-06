@@ -71,7 +71,7 @@
         android:id="@+id/textviewBienvenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido"
+        android:text="@string/benvenida"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"

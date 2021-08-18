@@ -39,6 +39,8 @@ class SignupTabFragment: Fragment(){
         btn.setOnClickListener {
 
             this.viewModel  = ViewModelProvider(this).get(UsuarioViewModel::class.java)
+
+
             var existe = viewModel.getUsuario(correo.editText?.text.toString(),clave.editText?.text.toString())
 
             if(correo.editText?.text.toString().isEmpty() && clave.editText?.text.toString().isEmpty() && nombre.editText?.text.toString().isEmpty()) {

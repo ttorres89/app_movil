@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.comparaprecios_tania.Model.Producto_detalle
 import com.example.comparaprecios_tania.R
+import com.squareup.picasso.Picasso
 
 class Visor_producto_detalle : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +30,10 @@ class Visor_producto_detalle : AppCompatActivity() {
         val imagen = findViewById<ImageView>(R.id.imageViewdetalle)
 
         if (list_productoDetalle != null) {
-            imagen.setImageResource(list_productoDetalle.get(0).productoModel.image)
+            //imagen.setImageResource(list_productoDetalle.get(0).productoModel.image)
+            //Picasso.with(this).load(list_productoDetalle.get(0).productoModel.image).centerCrop().into(imagen)
+            Picasso.with(this).load(list_productoDetalle.get(0).productoModel.image).placeholder(R.drawable.placeholder).error(R.drawable.error).fit().centerInside().into(imagen);
+
 
         }
 

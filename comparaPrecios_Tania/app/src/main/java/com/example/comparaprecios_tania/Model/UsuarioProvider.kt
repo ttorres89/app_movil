@@ -7,12 +7,14 @@ class UsuarioProvider {
         private val usuarios = arrayListOf<Usuario>(
 
             Usuario(
+                1,
                 "Tania",
                 "Torres",
                 "torres.tania89@gmail.com",
                 "12345"
             ),
             Usuario(
+                2,
                 "Natali",
                 "Torres",
                 "n.torres.reyes@gmail.com",

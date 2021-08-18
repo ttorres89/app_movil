@@ -8,5 +8,5 @@ import kotlinx.android.parcel.Parcelize
 data class ProductoModel(
     val nombre: String,
     val marca: String,
-    val image: Int
+    val image: String
 ): Parcelable

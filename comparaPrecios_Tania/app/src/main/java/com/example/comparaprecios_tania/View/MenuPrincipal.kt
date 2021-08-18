@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.comparaprecios_tania.R
 import com.example.comparaprecios_tania.ViewModel.ProductoViewModel
+import com.example.comparaprecios_tania.databinding.ActivityLoginBinding
+import com.example.comparaprecios_tania.databinding.ActivityMenuPrincipalBinding
 
 class MenuPrincipal : AppCompatActivity(),CellClickListener {
 
@@ -20,16 +22,17 @@ class MenuPrincipal : AppCompatActivity(),CellClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu_principal)
+        val binding = ActivityMenuPrincipalBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         this.productoViewModel = ViewModelProvider(this).get(ProductoViewModel::class.java)
 
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        val searchView = findViewById<SearchView>(R.id.svSearch)
+        val recyclerView = binding.recyclerView
+        val searchView = binding.svSearch
         val listaProducto = productoViewModel.obtenerLista()
         val listSearch = listaProducto
 
-        adapter = CustomAdapter(listaProducto!!)
+        adapter = CustomAdapter(listaProducto!!, this)
 
         adapter.setOnClickListener(object: View.OnClickListener{
             override fun onClick(v: View?) {

@@ -11,7 +11,7 @@ class Producto_Detalle_Provider {
             ProductoModel(
                 "Serum Retinol B3 ",
                 "La Roche Posay ",
-                R.drawable.ic_serum2
+                "https://i.postimg.cc/TwwF5pqj/0565445761dffc2ee35cd7cf3546b28aa12460ca4c8b64dd06885e069813d5cb.jpg"
             ),
             34199,
             Fuente(
@@ -25,7 +25,7 @@ class Producto_Detalle_Provider {
             ProductoModel(
                 "Serum Retinol B3 ",
                 "La Roche Posay ",
-                R.drawable.ic_serum2
+                "https://i.postimg.cc/TwwF5pqj/0565445761dffc2ee35cd7cf3546b28aa12460ca4c8b64dd06885e069813d5cb.jpg"
             ),
             33990,
         Fuente(
@@ -39,7 +39,7 @@ class Producto_Detalle_Provider {
             ProductoModel(
                     "Serum Retinol B3 ",
                     "La Roche Posay ",
-                    R.drawable.ic_serum2
+                "https://i.postimg.cc/TwwF5pqj/0565445761dffc2ee35cd7cf3546b28aa12460ca4c8b64dd06885e069813d5cb.jpg"
                 ),
         27199,
         Fuente(
@@ -52,7 +52,7 @@ class Producto_Detalle_Provider {
             ProductoModel(
                 "Pure Vitamin C10 Serum",
                 "La Roche Posay ",
-                R.drawable.ic_serum3
+                "https://i.postimg.cc/xC8jjjXh/6f508f57cfeb707a3188d1a15ef5f4d5a516a4817c65e00d75ef641de95ac328.jpg"
             ),
                 34199,
         Fuente(
@@ -66,7 +66,7 @@ class Producto_Detalle_Provider {
         ProductoModel(
             "Pure Vitamin C10 Serum",
             "La Roche Posay ",
-            R.drawable.ic_serum3
+            "https://i.postimg.cc/xC8jjjXh/6f508f57cfeb707a3188d1a15ef5f4d5a516a4817c65e00d75ef641de95ac328.jpg"
         ),
         25492,
     Fuente(
@@ -80,7 +80,7 @@ class Producto_Detalle_Provider {
         ProductoModel(
             "Pure Vitamin C10 Serum",
             "La Roche Posay ",
-            R.drawable.ic_serum3
+            "https://i.postimg.cc/xC8jjjXh/6f508f57cfeb707a3188d1a15ef5f4d5a516a4817c65e00d75ef641de95ac328.jpg"
         ),
     27359,
     Fuente(
@@ -93,7 +93,7 @@ class Producto_Detalle_Provider {
     ProductoModel(
     "Serum Hyalu B5",
     "La Roche Posay ",
-    R.drawable.ic_serum1
+    "https://i.postimg.cc/jjgw4FPV/1b0669dcd7ff86ee1b6dab286f763b52c3b173f0d7ca5a5df2f533fab9112ee2.jpg"
     ),
     34399,
     Fuente(
@@ -107,7 +107,7 @@ class Producto_Detalle_Provider {
         ProductoModel(
             "Serum Hyalu B5",
             "La Roche Posay ",
-            R.drawable.ic_serum1
+            "https://i.postimg.cc/jjgw4FPV/1b0669dcd7ff86ee1b6dab286f763b52c3b173f0d7ca5a5df2f533fab9112ee2.jpg"
         ),
     25492,
     Fuente(
@@ -121,7 +121,7 @@ class Producto_Detalle_Provider {
         ProductoModel(
             "Serum Hyalu B5",
             "La Roche Posay ",
-            R.drawable.ic_serum1
+            "https://i.postimg.cc/jjgw4FPV/1b0669dcd7ff86ee1b6dab286f763b52c3b173f0d7ca5a5df2f533fab9112ee2.jpg"
         ),
     27359,
     Fuente(
@@ -134,7 +134,7 @@ class Producto_Detalle_Provider {
             ProductoModel(
                 "Crema de Manos  Dermocuidado",
                 "Legucha",
-                R.drawable.ic_crema_mano
+               "https://i.postimg.cc/x8K1hxJ1/ic-crema-mano.jpg"
             ),
             2599,
             Fuente(
@@ -148,7 +148,7 @@ class Producto_Detalle_Provider {
             ProductoModel(
                 "Crema de Manos  Dermocuidado",
                 "Legucha",
-                R.drawable.ic_crema_mano
+                "https://i.postimg.cc/x8K1hxJ1/ic-crema-mano.jpg"
             ),
             2017,
             Fuente(

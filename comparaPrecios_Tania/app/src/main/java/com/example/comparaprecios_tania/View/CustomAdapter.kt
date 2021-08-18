@@ -18,8 +18,11 @@ import com.example.comparaprecios_tania.ViewModel.ProductoViewModel
 import com.google.android.material.snackbar.Snackbar.make
 import java.util.*
 import kotlin.collections.ArrayList
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import com.squareup.picasso.Picasso
 
-class CustomAdapter (private val listaProducto:ArrayList<ProductoModel>): RecyclerView.Adapter<CustomAdapter.ViewHolder>(), Filterable, View.OnClickListener {
+class CustomAdapter (private val listaProducto:ArrayList<ProductoModel>, private val context: Context): RecyclerView.Adapter<CustomAdapter.ViewHolder>(), Filterable, View.OnClickListener {
 
 
     private lateinit var  listener: View.OnClickListener
@@ -51,11 +54,15 @@ class CustomAdapter (private val listaProducto:ArrayList<ProductoModel>): Recycl
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
         viewHolder.itemTitle.text = listaProducto[i].nombre
         viewHolder.itemDetail.text = listaProducto[i].marca
-        viewHolder.itemImage.setImageResource(listaProducto[i].image)
+        //viewHolder.itemImage.setImageResource(Picasso.with(this).load(listaProducto[i].image))
+        //Picasso.with(context).load(listaProducto[i].image).centerCrop().into(viewHolder.itemImage);
+        Picasso.with(context).load(listaProducto[i].image).placeholder(R.drawable.placeholder).error(R.drawable.error).fit().centerInside().noFade().into(viewHolder.itemImage);
 
 
 
     }
+
+
 
     override fun getItemCount(): Int {
         return listaProducto.size

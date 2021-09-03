@@ -5,16 +5,17 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name = "com.example.comparaprecios_tania.db.config.Comparaprecio_app"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.comparaprecios_Tania">
-        <activity android:name=".View.Visor_producto_detalle"></activity>
-        <activity android:name=".View.MenuPrincipal" />
-        <activity android:name=".View.MainActivity" />
-        <activity android:name=".View.LoginActivity">
+        <activity android:name="com.example.comparaprecios_tania.ui.View.Visor_producto_detalle"></activity>
+        <activity android:name="com.example.comparaprecios_tania.ui.View.MenuPrincipal" />
+        <activity android:name="com.example.comparaprecios_tania.ui.View.MainActivity" />
+        <activity android:name="com.example.comparaprecios_tania.ui.View.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

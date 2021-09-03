@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".View.LoginActivity">
+        tools:context=".ui.View.LoginActivity">
 
         <View
             android:id="@+id/topview"

@@ -24,20 +24,4 @@ class UsuarioService {
         }
     }
 
-    /*suspend fun getjson(): List<Usuario>{
-
-        var response = URL("https://tania.rayunmapu.cl/usuario_tania.json").readText()
-        //here is another thread,handle response here
-        val gson = Gson()
-        val json: JSONObject = JSONObject(response)
-        val usuarios: JSONObject = json.getJSONObject("usuarios")
-        val exito = usuarios.getJSONArray("usuario")
-
-         val lista_usuario = gson.(exito.toString(), Usuarios::class.java)
-         //val response: Response<List<Usuario>>
-         //responsebody() = lista_usuario
-
-
-        return lista_usuario.usuarios
-    }*/
 }

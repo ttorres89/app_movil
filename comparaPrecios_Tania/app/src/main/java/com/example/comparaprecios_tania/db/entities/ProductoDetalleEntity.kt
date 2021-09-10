@@ -23,7 +23,7 @@ import com.google.gson.annotations.SerializedName
 ))
 
 data class ProductoDetalleEntity (
-    @PrimaryKey(autoGenerate = true) val id: Int,
+    @PrimaryKey @ColumnInfo(name = "id") val id: Int,
     @ColumnInfo(name ="id_producto") val id_producto: Int,
     @ColumnInfo(name ="precio") val precio: Int,
     @ColumnInfo(name ="id_fuente")  val id_fuente: Int,

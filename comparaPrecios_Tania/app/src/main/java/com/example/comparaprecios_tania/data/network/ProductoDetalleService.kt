@@ -11,13 +11,6 @@ class ProductoDetalleService {
 
     private val retrofit = RetrofitHelper.getRetrofit()
 
-    /*suspend fun getAllProductoDetalle(): List<Producto_detalle>{
-        return withContext(Dispatchers.IO){
-            val response: Response<List<Producto_detalle>> = retrofit.create(ApiService::class.java).getAllPorductoDetalle()
-            response.body()?: listOf<Producto_detalle>()
-        }
-    }*/
-
     suspend fun getAllProductoDetalle(nombre: String): Response<List<Producto_detalle>> {
         return withContext(Dispatchers.IO){
             retrofit.create(ApiService::class.java).getAllPorductoDetalle2(nombre)

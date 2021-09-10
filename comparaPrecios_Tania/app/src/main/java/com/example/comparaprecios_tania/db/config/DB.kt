@@ -16,7 +16,7 @@ import com.example.comparaprecios_tania.db.entities.UsuarioEntity
 
 @Database(
     entities = [UsuarioEntity::class, ProductoEntity::class, ProductoDetalleEntity::class, FuenteEntity::class],
-    version = 4,
+    version = 8,
     exportSchema = false
 )
 abstract class DB: RoomDatabase() {

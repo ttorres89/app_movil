@@ -3,6 +3,8 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -38,9 +40,13 @@ android {
         experimental = true
     }
 
-    dataBinding{
-        enabled = true
+    /*dataBinding{
+        enabled = true*
+    }*/
+    buildFeatures{
+        viewBinding=true
     }
+
 }
 
 dependencies {
@@ -62,6 +68,8 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
 
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+
     kapt 'androidx.lifecycle:lifecycle-compiler:2.3.0'
 
     //picasso
@@ -80,6 +88,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
 
 
+
     //Corrutinas
     //implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.6'
 
@@ -93,4 +102,12 @@ dependencies {
     implementation "androidx.viewpager2:viewpager2:1.0.0"
     androidTestImplementation 'androidx.test:rules:1.3.0'
     androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.4.0'
+
+    implementation platform('com.google.firebase:firebase-bom:28.4.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+
+
+
+
 }

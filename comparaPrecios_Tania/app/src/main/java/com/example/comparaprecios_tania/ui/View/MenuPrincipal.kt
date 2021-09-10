@@ -1,8 +1,10 @@
 package com.example.comparaprecios_tania.ui.View
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.util.Log
 import android.view.View
 import android.widget.Toast
@@ -13,13 +15,14 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.comparaprecios_tania.data.Model.ProductoModel
-import com.example.comparaprecios_tania.ui.ViewModel.ProductoViewModel
 import com.example.comparaprecios_tania.databinding.ActivityMenuPrincipalBinding
+import com.example.comparaprecios_tania.ui.ViewModel.ProductoViewModel
 
 class MenuPrincipal : AppCompatActivity(),CellClickListener {
 
     private lateinit var adapter: CustomAdapter
     private lateinit var productoViewModel:ProductoViewModel
+    //val sharedPreference = getSharedPreferences("nombre_producto", Context.MODE_PRIVATE)
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,14 +39,8 @@ class MenuPrincipal : AppCompatActivity(),CellClickListener {
                 override fun onClick(v: View?) {
                     val intent=Intent(applicationContext, Visor_producto_detalle::class.java)
                     val nombre = it.get(binding.recyclerView.getChildAdapterPosition(v!!)).nombre
-                    //val producto_detalle = productoViewModel.buscarProductoDetalle(nombre)
-                    //val imagen = producto_detalle?.get(0)!!.productoModel.image
 
-                    //startActivity(intent.putExtra("prod",producto_detalle))
                     startActivity(intent.putExtra("prod",nombre))
-
-                    //startActivity(intent.putExtra("prod",imagen))
-
                 }
             })
             binding.recyclerView.layoutManager = LinearLayoutManager(this)

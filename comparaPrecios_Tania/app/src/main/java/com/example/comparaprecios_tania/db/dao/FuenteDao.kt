@@ -14,6 +14,9 @@ interface FuenteDao {
     @Query("SELECT * from fuente")
     suspend fun getFuente(): List<FuenteEntity>
 
+    @Query("SELECT * from fuente where id=:id")
+    suspend fun getFuenteId(id: Int): List<FuenteEntity>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertFuente(fuente: FuenteEntity)
 }

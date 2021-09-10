@@ -29,14 +29,7 @@ class UsuarioRepository () {
                 if (usuario!=null){
                     db.usuarioDao().insertUsuario(ConversorUsuario.convertirUsuarioEntity(usuario))
                 }
-
             }
-
-
-            /*withContext(Dispatchers.IO){
-                var lista_usuario: List<UsuarioEntity> = getUsuario_db()
-                Log.d("Usuarios_db", lista_usuario.toString())
-            }*/
         }
         usuarioServices.onFailure { Log.e("Error", it.message.toString()) }
 
@@ -45,7 +38,6 @@ class UsuarioRepository () {
         if(usuarioEntity!=null){
             return ConversorUsuario.convertirUsuario(usuarioEntity)
         }
-
         return null
 
     }

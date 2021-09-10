@@ -11,12 +11,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.comparaprecios_tania.data.Model.Producto_detalle
 import com.example.comparaprecios_tania.R
+import com.example.comparaprecios_tania.ui.ViewModel.ProductoDetalleViewModel
 import com.example.comparaprecios_tania.ui.ViewModel.ProductoViewModel
 import com.squareup.picasso.Picasso
 
 class Visor_producto_detalle : AppCompatActivity() {
 
-    private lateinit var productoViewModel:ProductoViewModel
+    private lateinit var productodetalleViewModel:ProductoDetalleViewModel
     var lista_producto_detalle = MutableLiveData<List<Producto_detalle>>()
     lateinit var nombre:String
 
@@ -27,12 +28,12 @@ class Visor_producto_detalle : AppCompatActivity() {
         nombre = intent.getStringExtra("prod").toString().trim()
         Log.d("nombre_producto", nombre)
 
-        this.productoViewModel = ViewModelProvider(this).get(ProductoViewModel::class.java)
+        this.productodetalleViewModel = ViewModelProvider(this).get(ProductoDetalleViewModel::class.java)
         //this.productoViewModel.onCreateProductoDetalle(nombre)
         //Log.d("nombre" , nombre)
-        this.productoViewModel.buscarProductoDetalle(nombre)
+        this.productodetalleViewModel.buscarProductoDetalle(nombre)
 
-        productoViewModel.productoDetalle_list.observe(this , Observer {
+        productodetalleViewModel.productoDetalle_list.observe(this , Observer {
 
             Log.d("prod_det_vista" , it.toString())
             val recyclerView = findViewById<RecyclerView>(R.id.recyclerView_visordetalle)
@@ -49,7 +50,7 @@ class Visor_producto_detalle : AppCompatActivity() {
                 //imagen.setImageResource(list_productoDetalle.get(0).productoModel.image)
                 //Picasso.with(this).load(list_productoDetalle.get(0).productoModel.image).centerCrop().into(imagen)
                 Picasso.with(this).load(it.get(0).productoModel.image).placeholder(R.drawable.placeholder).error(R.drawable.error).fit().centerInside().into(imagen);
-
+                //throw RuntimeException("Test Crash") // Force a crash
 
             }
 

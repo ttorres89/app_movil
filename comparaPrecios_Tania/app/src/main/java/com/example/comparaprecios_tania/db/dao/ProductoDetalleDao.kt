@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.example.comparaprecios_tania.data.Model.Producto_detalle
 import com.example.comparaprecios_tania.db.entities.ProductoDetalleEntity
 import com.example.comparaprecios_tania.db.entities.ProductoEntity
 
@@ -15,4 +16,5 @@ interface ProductoDetalleDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertProductosDetalle(productosDetalle: List<ProductoDetalleEntity>)
+
 }
